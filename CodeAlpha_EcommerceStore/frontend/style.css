@@ -1,0 +1,253 @@
+/* General Page Styling */
+body {
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  color: #333;
+}
+
+/* Headings */
+h1, h2, h3 {
+  text-align: center;
+  margin: 20px 0;
+  color: #222;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Navigation Bar */
+nav {
+  background: linear-gradient(90deg, #ff6b6b, #ff4757);
+  padding: 14px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffeaa7;
+}
+
+/* Search Section */
+#search {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#search input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#search button {
+  margin-left: 10px;
+}
+
+/* Form Cards (Register/Login) */
+.form-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.form-card input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-card button {
+  margin-top: 10px;
+}
+
+/* Product Grid */
+#products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+.product {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.product h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #ff4757;
+}
+
+.product p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #444;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(90deg, #ff6b6b, #ff4757);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #e84118, #c23616);
+  transform: scale(1.08);
+}
+
+/* Cart Items */
+.cart-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cart-items img {
+  width: 60px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.cart-items p {
+  flex: 1;
+  margin-left: 12px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.cart-items button {
+  background: linear-gradient(90deg, #ff4d4d, #cc0000);
+  padding: 6px 12px;
+}
+
+.cart-items button:hover {
+  background: linear-gradient(90deg, #cc0000, #990000);
+}
+
+/* Total Section */
+#total {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  color: #ff4757;
+  padding-right: 20px;
+}
+
+/* Orders Section */
+#orders {
+  margin: 30px auto;
+  max-width: 650px;
+}
+
+.order {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.order:hover {
+  transform: scale(1.02);
+}
+
+.order h3 {
+  margin-top: 0;
+  color: #ff4757;
+}
+
+.order ul {
+  list-style: none;
+  padding: 0;
+}
+
+.order li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Profile Section */
+#profile {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 25px auto;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+#profile:hover {
+  transform: scale(1.03);
+}
+
+/* Admin Dashboard */
+#admin {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+#admin input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}

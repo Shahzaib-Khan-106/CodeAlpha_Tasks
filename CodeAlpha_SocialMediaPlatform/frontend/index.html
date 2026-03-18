@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini Social Media</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Social Media App</h1>
+
+  <div id="register">
+    <h2>Register</h2>
+    <input id="username" placeholder="Username">
+    <input id="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
+    <button onclick="register()">Register</button>
+  </div>
+
+  <div id="login">
+    <h2>Login</h2>
+    <input id="loginEmail" placeholder="Email">
+    <input id="loginPassword" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="logout">
+    <h2>Logout</h2>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <div id="posts">
+    <h2>Posts</h2>
+    <textarea id="postContent"></textarea>
+    <button onclick="createPost()">Post</button>
+    <div id="postList"></div>
+  </div>
+
+  <div id="profile">
+    <h2>Profile</h2>
+    <button onclick="loadProfile()">View My Profile</button>
+    <div id="profileData"></div>
+  </div>
+
+  <div id="feed">
+    <h2>My Feed</h2>
+    <button onclick="loadFeed()">View My Feed</button>
+    <div id="feedData"></div>
+  </div>
+
+  <div id="notifications">
+    <h2>Notifications</h2>
+    <button onclick="loadNotifications()">View My Notifications</button>
+    <div id="notificationData"></div>
+  </div>
+
+  <!-- ✅ New Chat Section -->
+  <div id="chat">
+    <h2>Chat</h2>
+    <input id="chatRecipient" placeholder="Recipient User ID">
+    <input id="chatMessage" placeholder="Type your message">
+    <button onclick="sendChatMessage()">Send Message</button>
+    <div id="chatBox" style="margin-top:15px; border:1px solid #ddd; padding:10px; min-height:150px; background:#fafafa;">
+      <!-- Chat messages will appear here -->
+    </div>
+  </div>
+
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
